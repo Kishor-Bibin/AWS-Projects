@@ -122,6 +122,7 @@ After completing this project, you should have an event-driven image upload noti
 1. When an image is uploaded to the S3 bucket, an event is triggered.
 2. The Lambda function processes the event and sends a notification through SNS.
 3. Subscribers receive a message notifying them about the new image upload.
+   ![Result Example](https://github.com/Kishor-Bibin/AWS-Projects/blob/cb2971ef847af666b71147917e2b40a749c3b219/Project%205/Images/Screenshot%202024-10-14%20210805.png)
 
 ---
 
