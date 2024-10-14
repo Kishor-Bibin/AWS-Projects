@@ -1,7 +1,3 @@
-Certainly! Below is a detailed **README.md** template for your project. Feel free to customize it based on your preferences and the architectural diagram you have.
-
----
-
 # Event-Driven Image Upload Notification System
 
 ## Project Description
@@ -38,7 +34,8 @@ The architecture consists of the following components:
 2. **AWS Lambda**: A serverless function that processes the S3 event.
 3. **Amazon SNS**: A notification service that sends alerts to subscribers when an image is uploaded.
 
-![Project Architecture](path_to_your_architecture_image)
+!()[https://github.com/Kishor-Bibin/AWS-Projects/blob/f6ed997de68cd8d3976222ddb94e6c7b25db8234/Project%205/Images/EDA_Architecture.png]
+
 
 ---
 
@@ -63,7 +60,7 @@ If you don’t already have an AWS account, sign up at [aws.amazon.com](https://
 
 1. Go to the **S3 Management Console**.
 2. Create a new S3 bucket:
-   - Bucket Name: `amc-eda-project-123`
+   - Bucket Name: Eg:`eda-project-123`
    - Region: Choose your preferred region.
 3. Note the bucket name and region as you’ll need this information later.
 
@@ -107,32 +104,6 @@ If you don’t already have an AWS account, sign up at [aws.amazon.com](https://
 
 In the **Lambda** function editor, paste the following code:
 
-```python
-import json
-import boto3
-
-sns_client = boto3.client('sns')
-
-def lambda_handler(event, context):
-    # Extracting S3 bucket and object information
-    bucket_name = event['Records'][0]['s3']['bucket']['name']
-    object_key = event['Records'][0]['s3']['object']['key']
-    
-    # Construct the message
-    message = f"An image has been uploaded to S3 bucket: {bucket_name}, file: {object_key}"
-    
-    # Publish the message to SNS topic
-    response = sns_client.publish(
-        TopicArn='arn:aws:sns:your-region:your-account-id:ImageUploadNotification',
-        Message=message,
-        Subject='Image Upload Notification'
-    )
-    
-    return {
-        'statusCode': 200,
-        'body': json.dumps('Notification sent successfully!')
-    }
-```
 
 Replace `'arn:aws:sns:your-region:your-account-id:ImageUploadNotification'` with the actual SNS Topic ARN from Step 3.
 
