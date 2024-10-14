@@ -138,7 +138,6 @@ After completing this project, you should have an event-driven image upload noti
 
 This project illustrates the basic principles of **Event-Driven Architecture** using AWS services. It is scalable and can be expanded with additional functionality as your understanding of AWS grows.
 
-Feel free to reach out if you have any questions or need further assistance!
 
 --- 
 
@@ -149,4 +148,3 @@ GitHub: [Your GitHub Profile](https://github.com/your-github-profile)
 
 ---
 
-This **README** should make it easier for you to present your project, highlighting all the crucial steps and future potential!
