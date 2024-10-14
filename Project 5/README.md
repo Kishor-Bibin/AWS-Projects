@@ -34,7 +34,7 @@ The architecture consists of the following components:
 2. **AWS Lambda**: A serverless function that processes the S3 event.
 3. **Amazon SNS**: A notification service that sends alerts to subscribers when an image is uploaded.
 
-!()[https://github.com/Kishor-Bibin/AWS-Projects/blob/f6ed997de68cd8d3976222ddb94e6c7b25db8234/Project%205/Images/EDA_Architecture.png]
+!(Project Architechure)[https://github.com/Kishor-Bibin/AWS-Projects/blob/f6ed997de68cd8d3976222ddb94e6c7b25db8234/Project%205/Images/EDA_Architecture.png]
 
 
 ---
